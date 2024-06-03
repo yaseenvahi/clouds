@@ -1,0 +1,6 @@
+EXP:4   IAM SECURITY POLICIES AND ACCESS CONTROL
+-->search IAM user 
+-->create many users(s3 policy)
+-->download .csv file
+-->create a user grp(ec2 instance)
+-->view the user grp an add the users in the grp

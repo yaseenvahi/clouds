@@ -1,0 +1,16 @@
+EXP 6:   DOCKER CONTAINERIZATION AND DOCKER VOLUMES
+-->create a instance
+-->click connect
+-->select the ec2 instance connect
+-->connect
+-->sudo su
+yum install docker
+docker --version
+systemctl start docker
+docker run -it ubuntu bash
+
+ctrl+d--->came out of root
+
+docker volume create my_volume
+docker run -d --name my_nginx -v my_volume:/usr/share/nginx/html -p 80:80 nginx
+docker inspect my_nginx

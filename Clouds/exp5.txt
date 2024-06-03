@@ -1,0 +1,14 @@
+EXP:5   AMI AND SNAPSHOT CREATION 
+-->search ec2 instance
+-->create a instance 
+-->select the instance 
+-->click the action-image template-create image
+-->enter the name of the image
+-->click create image
+-->the image is created in the AMI
+-->select the snapshot from the left side 
+-->click the create snapshot
+-->enter the name
+-->select the instance that u created recently to create the image
+-->create 
+-->the snap is created

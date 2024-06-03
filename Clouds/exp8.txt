@@ -1,0 +1,54 @@
+-->Open cloud9
+-->create environment without any change and create it.
+-->click open ide
+
+create folder src and test
+
+--> wget https://repo1.maven.org/maven2/junit/junit/4.13.2/junit-4.13.2.jar
+--> wget https://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar 
+
+*BankTest*
+
+import org.junit.Test;
+import static org.junit.Assert.assertEquals;
+
+public class BankTest{
+    @Test
+    public void testdeposit(){
+        Bank bank=new Bank();
+        int result=bank.deposit(10000);
+        assertEquals("Deposite failure ", result,10000);
+    }
+    @Test
+    public void testwithdraw(){
+        Bank bank=new Bank();
+        int result=bank.withdraw(2000);
+        assertEquals("withdraw failure ", result,2000);
+    }
+    @Test
+    public void testbalance(){
+        Bank bank=new Bank();
+        int result=bank.bal(8000);
+        assertEquals("balance failure ", result,8000);
+    }
+    
+}
+
+*Bank*
+
+public class Bank{
+    public int deposit(int a){
+        return a;
+    }
+    public int withdraw(int a){
+        return a;
+    }
+    public int bal(int a){
+        return a;
+    }
+}
+
+--> in terminal
+
+javac -cp .:junit-4.13.2.jar:hamcrest-core-1.3.jar src/Bank.java test/BankTest.java
+java -cp .:src:test:junit-4.13.2.jar:hamcrest-core-1.3.jar org.junit.runner.JUnitCore BankTest

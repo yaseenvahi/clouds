@@ -1,0 +1,9 @@
+EXP 1:EC2 INSTANCE CREATION
+-->search ec2 instance and select the 1st
+-->click launch instance
+-->create name,tags
+-->select AMI(AWS Amazon)
+-->create the key pair(download the file)
+-->network settings(subnet setting)
+-->add security grps(type=http ,sourcetype=custom , source=0.0.0.0/0
+-->click launch instance and view instances

@@ -1,0 +1,18 @@
+EXP 2:RDP TO LOGIN INTO WINDOWS
+-->select ec2 instance and launch the new instance
+-->create name,tags
+-->select AMI(windows)
+-->generate the key pair
+-->network settings(subnet setting)
+-->add security grps(type=http ,sourcetype=custom , source=0.0.0.0/0
+-->click launch instance and view instances
+-->select the instance and click connect
+-->select the RDP client
+-->select the getpassword
+-->then download the remote desktop file(RDP file)
+-->copy the password
+-->upload the key pair file
+-->select decrypt password
+-->open the RDP file
+-->paste the password and click ok
+-->new window is opened

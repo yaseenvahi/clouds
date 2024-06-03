@@ -1,0 +1,22 @@
+EXP:9   AMAZON EC2 AUTO SCALING GROUPS AND APPLICATION LOAD BALANCER
+-->search ECS
+-->create cluster
+-->enter the cluster name
+-->click create cluster
+-->task definitions
+-->click create new task definitions
+-->enter the target group name
+-->CPU -0.5 memory-1gb
+-->container name (target group name)
+-->Image URI(nginxdemos/hello)
+-->create task
+-->in clusters create a service
+-->select the task created
+-->enter the service name
+-->edit the networking- type:http ,source type:anywhere
+-->load balancers-click-application load balancer
+-->enter the load name
+-->click create service
+-->then go to ec2-load balancer-select the created load
+-->copy the DNS name 
+-->paste it in new tab

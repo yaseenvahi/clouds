@@ -1,0 +1,28 @@
+EXP:10   NETWORK LOAD NBALANCERS
+-->create the instance
+-->go to load balancers
+-->create load
+-->select network load balancer
+-->click create
+-->enter the load balancer name
+-->in network mappings select the instances mappings code
+-->go to ec2 instance page and the click the created instance id
+-->then click the subnet id
+-->check the available zone  (eg:ap-southeast-2a)
+-->then go back to load balancers mappings select this.
+-->in security grps select the instance used and the default must be there.
+-->in listeners and routing click create target grp
+-->enter the target name and create
+-->select the instance id and click include as pending below
+-->then click target grp
+-->enter the name
+-->click create
+-->select the create target grp
+-->again go to the listeners and routing
+-->change the protocol to udp
+-->click create target grp
+-->enter the name
+-->click create
+-->select the created target grp
+-->click create load balancers
+-->things created will be visible in the listeners

@@ -1,0 +1,17 @@
+EXP:3  S3 BUCKET
+-->search s3
+-->create a unique bucket name
+-->Bucket version-Enable
+-->Bucket key-Disable
+-->then click create bucket
+-->click the new bucket
+-->permission-off the block public(save changes)
+-->bucket policy-policy generator-select s3 bucket policy
+-->principle-*
+-->action-getobject
+-->ARN-copy the arn from console and paste add (/*)
+-->click add statement
+-->generate policy
+-->copy the json file and paste in the bucket policy and save changes.
+-->click the bucket and select the object and copy the object url.
+-->run in the new tab 
